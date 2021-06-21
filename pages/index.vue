@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="6" sm="4" md="3" class="col1">
+    <v-col cols="11" sm="4" md="3" class="col1">
       <div>
         <v-card class="card"
           elevation="5"
@@ -92,7 +92,7 @@ export default {
 .col1{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
+  margin-top: 260px;
 }
 .v-card{
   text-align: center;
@@ -130,7 +130,7 @@ input{
   color: rgb(81, 62, 246) !important;
 }
 .sign-up p{
-  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
   color: white;
 }
@@ -147,5 +147,6 @@ input{
 }
 .v-input__slot {
   background-color: white !important;
+  margin-top: 10px;
 }
 </style>
