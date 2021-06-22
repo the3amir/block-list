@@ -21,9 +21,9 @@
           <v-card-text class="input-form">
             <v-text-field class="text-filed"
               v-model='username'
-              id='username'
-              name='username'
-              label='اسم المستخدم'
+              id='pagename'
+              name='pagename'
+              label='اسم البيج'
               type='text'
                filled
               rounded
@@ -32,9 +32,9 @@
             </v-text-field>
             <v-text-field class="text-filed"
               v-model='password'
-              id='password'
-              label='كلمة المرور'
-              type='password'
+              id='pagelink'
+              label='رابط البيج'
+              type='text'
                filled
               rounded
               dense
@@ -42,9 +42,9 @@
             </v-text-field>
             <v-text-field class="text-filed"
               v-model='password'
-              id='password'
-              label='تأكيد كلمة المرور'
-              type='password'
+              id='type'
+              label='نوع النشاط'
+              type='text'
                filled
               rounded
               dense
@@ -52,26 +52,20 @@
             </v-text-field>
             <v-text-field class="text-filed"
               v-model='username'
-              id='phone'
-              name='phone'
-              label='رقم الهاتف'
-              type='number'
+              id='jop'
+              name='jop'
+              label='دورك في البيج'
+              type='text'
               filled
               rounded
               dense
               reverse>
             </v-text-field>
-            <v-select class="text-filed"
-              color="pink"
-              label="البلد"
-               filled
-              rounded
-              dense
-            ></v-select>
             
             <v-spacer></v-spacer>
             <v-card-actions>
-              <v-btn class="login-btn" @click="$router.push('Registration2')">التالي</v-btn>
+                <v-btn class="sign-btn" @click='loginClicked'>تسجيل</v-btn>
+                <v-btn class="sign-btn" @click="$router.push('Registration')">السابقة</v-btn>
             </v-card-actions>
           </v-card-text>
           <hr>
@@ -104,33 +98,12 @@ export default {
 }
 </script>
 <style>
-.col2{
-  width: 150px;
-  margin-left: 0px;
-  margin-right: auto;
-  margin-top: 80px;
-}
-.col{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  font-size: 30px;
-}
-.col h1{
-  width: 600px;
-}
-.signup-img{
-  margin-top: 10px;
-  width: 750px;
-  height: 650px;
-  margin-right: -150px;
-}
-.sign-up{
-  margin-top: 10px;
-  font-size: 18px;
-}
-.card-title{
-  color: white;
-  justify-content: center;
+.sign-btn{
+    background-color: #6170E7 !important;
+    color: white !important;
+    font-size: 18px !important;
+    width: 150px;
+    margin-left: 5px;
+    margin-right: 60px;
 }
 </style>
