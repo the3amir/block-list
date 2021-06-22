@@ -110,15 +110,6 @@ export default {
   margin-right: auto;
   margin-top: 80px;
 }
-.col{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  font-size: 30px;
-}
-.col h1{
-  width: 600px;
-}
 .signup-img{
   margin-top: 10px;
   width: 750px;
@@ -128,9 +119,5 @@ export default {
 .sign-up{
   margin-top: 10px;
   font-size: 18px;
-}
-.card-title{
-  color: white;
-  justify-content: center;
 }
 </style>
