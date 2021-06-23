@@ -78,6 +78,7 @@ import Logo from '~/components/Logo.vue'
 import login from "~/assets/login.png"
 
 export default {
+  layout:'Registration',
   components: {
     Logo
   },

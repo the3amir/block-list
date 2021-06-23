@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6" class="col">
+    <v-col cols="11" sm="8" md="6" class="col">
       <div class="text-center">
         <h3>مرحبا بكم في </h3>
         <h1>block list</h1>
@@ -87,6 +87,7 @@ import Logo from '~/components/Logo.vue'
 import signup from "~/assets/signup.png"
 
 export default {
+  layout:'Registration',
   components: {
     Logo
   },

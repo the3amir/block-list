@@ -9,7 +9,7 @@
           <img :src="signup" class="signup-img"/>
       </div>
     </v-col>
-    <v-col cols="6" sm="4" md="4" class="col2">
+    <v-col cols="11" sm="4" md="4" class="col2">
       <div>
         <v-card class="card"
           elevation="5"
@@ -93,6 +93,7 @@ import Logo from '~/components/Logo.vue'
 import signup from "~/assets/signup.png"
 
 export default {
+  layout:'Registration',
   components: {
     Logo
   },
