@@ -89,14 +89,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import signup from "~/assets/signup.png"
+import signup from "~/static/signup.png"
 
 export default {
   layout:'Registration',
-  components: {
-    Logo
-  },
   data: function () {
     return {
       signup: signup

@@ -74,14 +74,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import login from "~/assets/login.png"
+import login from "~/static/login.png"
 
 export default {
   layout:'Registration',
-  components: {
-    Logo
-  },
   data: function () {
     return {
       login: login
