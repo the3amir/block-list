@@ -20,38 +20,34 @@
           <hr>
           <v-card-text class="input-form">
             <v-text-field class="text-filed"
-              v-model='username'
               id='pagename'
               name='pagename'
               label='اسم البيج'
               type='text'
-               filled
+              filled
               rounded
               dense
               reverse>
             </v-text-field>
             <v-text-field class="text-filed"
-              v-model='password'
               id='pagelink'
               label='رابط البيج'
               type='text'
-               filled
+              filled
               rounded
               dense
               reverse>
             </v-text-field>
             <v-text-field class="text-filed"
-              v-model='password'
               id='type'
               label='نوع النشاط'
               type='text'
-               filled
+              filled
               rounded
               dense
               reverse>
             </v-text-field>
             <v-text-field class="text-filed"
-              v-model='username'
               id='jop'
               name='jop'
               label='دورك في البيج'
@@ -61,7 +57,6 @@
               dense
               reverse>
             </v-text-field>
-            
             <v-spacer></v-spacer>
             <v-card-actions>
                 <v-btn class="sign-btn" @click='loginClicked'>تسجيل</v-btn>

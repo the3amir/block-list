@@ -1,20 +1,25 @@
 <template>
   <div>
-      <h1>her is</h1>
       <Slidbar/>
       <AddSwiper/>
+      <CardPerson/>
+      <LabelCompany />
   </div>
 </template>
 
 <script>
 import Slidbar from '~/components/Slidbar.vue';
 import AddSwiper from '~/components/AddSwiper.vue';
+import CardPerson from '../components/CardPerson.vue';
+import LabelCompany from '../components/LabelCompany.vue'
 
 export default {
     layout:'Registration',
     components: {
         Slidbar,
-        AddSwiper
+        AddSwiper,
+        CardPerson,
+        LabelCompany,
     }
 }
 </script>

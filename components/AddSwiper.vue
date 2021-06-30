@@ -13,7 +13,7 @@
 
 <script>
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-  import 'swiper/css/swiper.css'
+  //import 'swiper/css/swiper.css'
 
   export default {
     name: 'swiper-example-fade-effect',
@@ -42,7 +42,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import './base.scss';
+  //@import './base.scss';
 
   .swiper {
     height: 360px;

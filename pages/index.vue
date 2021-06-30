@@ -45,7 +45,7 @@
               ></v-checkbox>
             <v-spacer></v-spacer>
             <v-card-actions>
-              <v-btn class="login-btn"   elevation="4"  @click='loginClicked'>تسجل دخول</v-btn>
+              <v-btn class="login-btn"   elevation="4" >تسجيل دخول</v-btn>
             </v-card-actions>
           </v-card-text>
           <hr>
@@ -103,7 +103,7 @@ export default {
 .col{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: 30px;
 }
 .col h1{

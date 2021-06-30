@@ -20,7 +20,6 @@
           <hr>
           <v-card-text class="input-form">
             <v-text-field class="text-filed"
-              v-model='username'
               id='username'
               name='username'
               label='اسم المستخدم'
@@ -31,7 +30,6 @@
               reverse>
             </v-text-field>
             <v-text-field class="text-filed"
-              v-model='password'
               id='password'
               label='كلمة المرور'
               type='password'
@@ -41,7 +39,6 @@
               reverse>
             </v-text-field>
             <v-text-field class="text-filed"
-              v-model='password'
               id='password'
               label='تأكيد كلمة المرور'
               type='password'
@@ -51,7 +48,6 @@
               reverse>
             </v-text-field>
             <v-text-field class="text-filed"
-              v-model='username'
               id='phone'
               name='phone'
               label='رقم الهاتف'
@@ -108,7 +104,7 @@ export default {
   margin-top: 80px;
 }
 .signup-img{
-  margin-top: 10px;
+  margin-top: -20px;
   width: 750px;
   height: 650px;
   margin-right: -150px;

@@ -1,6 +1,12 @@
 <template>
 <div>
-  <h1 id="black-list">block list</h1>
+  <div class="upper">
+    <v-row>
+      <v-text-field class="search-input" label="search" solo></v-text-field>
+      <v-btn class="search-btn"> <v-icon left> mdi-magnify</v-icon></v-btn>
+    </v-row>
+    <h1 id="black-list">block list</h1>
+  </div>
     <v-navigation-drawer class="nav"
       v-model="drawer"
       permanent>
@@ -10,6 +16,18 @@
           <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
         </v-list-item-avatar>
       </v-list-item>
+      <v-btn tile color="primary" class="slider-btn">
+      <v-icon left>mdi-pencil</v-icon>
+      التعديل
+      </v-btn>
+      <v-btn tile color="success" class="slider-btn">
+      <v-icon left>mdi-account-circle </v-icon>
+      البروفايل
+      </v-btn>
+      <v-btn tile color="error" class="slider-btn">
+      <v-icon left>mdi-close-circle-outline</v-icon>
+      تسجيل الخروج
+      </v-btn>
       <v-divider></v-divider>
       <v-list dense>
         <v-list-item class="nav-item"
@@ -47,11 +65,6 @@
   }
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
-html{
-  font-family: 'Almarai', sans-serif;
-  text-align: center;
-}
 .nav{
   float: right;
   height: 80vh !important;
@@ -65,7 +78,11 @@ html{
 }
 .v-list-item{
   padding: 10px 16px;
-  margin:20px 0px 20px 0px ;
+  margin:15px 0px 15px 0px ;
+}
+.px-2{
+  padding: 10px 16px;
+  margin:0px 0px 0px 0px ;
 }
 .v-list-item__icon i{
   color: white !important;
@@ -88,6 +105,10 @@ html{
   width: 100px !important;
   height: 65px !important;
 }
+.slider-btn{
+  font-size: 14px !important;
+  margin-top: 10px;
+}
 .nav-title{
   font-size: 20px !important;
   height: 20px;
@@ -99,13 +120,36 @@ html{
   border-radius: 30px;
 }
 .v-divider{
+  margin-top: 10px;
   border-color: white !important;
 }
+.upper{
+  display:flex;
+}
 #black-list{
+  float: right;
   font-size: 40px;
   text-align: right;
   margin-right: 50px;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 20px;
+}
+.search-input {
+  flex: 0 1 auto !important;
+}
+.search-input .v-input__slot{
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 350px;
+}
+.search-btn{
+    min-width: 40px !important;
+    height: 48px !important;
+    margin-top: 30px;
+    margin-left: -59px;
+}
+.search-btn i{
+  font-size: 30px !important;
+  margin-left: 1px;
 }
 </style>
